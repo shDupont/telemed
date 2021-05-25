@@ -9,6 +9,17 @@
   background: linear-gradient(to left, rgba(55, 236, 186, 1), rgba(114, 175, 211, 1));
 }
 
+@font-face {
+    font-family: 'Jones-Medium';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Jones-Medium'), url('/static/fonts/Jones-Medium.otf') format('opentype');
+}
+
+body{
+    font-family: 'Jones-Medium'!important;
+}
+
 .btn-light{
   background: #ffffff!important;
   color: #00EDBC!important;
