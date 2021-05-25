@@ -25,3 +25,6 @@ def signin(request):
 
 def obrigado(request):
     return render(request, 'med_app/obrigado.html')
+
+def agendar(request):
+    return render(request, 'med_app/agendar.html')
