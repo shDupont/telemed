@@ -1,0 +1,64 @@
+
+{% extends 'med_app/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid gradient-custom p-5 mt-5" style="height: 100vh">
+
+<h1 class="text-center text-light px-5 mt-5">Criar conta como Paciente</h1>
+    <div class="container-signup  p-5 bg-light rounded my-5" >
+
+
+<form class="justify-content-center text-center">
+  <!-- 2 column grid layout with text inputs for the first and last names -->
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+        <input type="text" id="form3Example1" class="form-control p-2" />
+        <label class="form-label" for="form3Example1">Nome</label>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-outline">
+        <input type="text" id="form3Example2" class="form-control p-2" />
+        <label class="form-label" for="form3Example2">Sobrenome</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Email input -->
+  <div class="form-outline mb-4">
+    <input type="email" id="form3Example3" class="form-control p-2" />
+    <label class="form-label" for="form3Example3">Email</label>
+  </div>
+
+  <!-- Password input -->
+  <div class="form-outline mb-4">
+    <input type="password" id="form3Example4" class="form-control p-2" />
+    <label class="form-label" for="form3Example4">Senha</label>
+  </div>
+
+    <div class="form-outline mb-4">
+    <input type="password" id="confirmarSenha" class="form-control p-2" />
+    <label class="form-label" for="form3Example4">Confirmar Senha</label>
+  </div>
+
+    <p class="text-center">Ou</p>
+
+
+        <button type="submit" class="btn btn-lg mb-4 "><i class="fab fa-google mx-2"></i>Continuar com o Google</button>
+
+<p class="text-center">Ao criar uma conta, você está aceitando os Termos de Condições de uso da Conncare e concordando com nossa políticas de privacidade</p>
+    <hr>
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-lg mb-4">Criar conta</button>
+
+  <!-- Register buttons -->
+  <div class="text-center">
+<a class="text-center"> Já possui uma conta?</a>
+  </div>
+</form>
+    </div>
+</div>
+
+{% endblock %}

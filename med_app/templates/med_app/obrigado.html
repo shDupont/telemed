@@ -1,0 +1,40 @@
+{% extends 'med_app/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid  gradient-custom py-5 " style="height: 100vh" >
+
+    <div class="container text-center " style="margin-top: 33vh">
+        <h1 class="text-center text-light">Obrigado por agendar sua consulta!</h1>
+
+        <div class="row my-5 ">
+            <div class=" col-6 text-end">
+                <h2 class="text-light"><img class="m-auto"
+                src="{% static 'images/calendar.svg' %}"
+                height="75"
+                alt=""
+                loading="lazy"
+                style="margin-top: -1px;"
+                        /> 12/12</h2>
+            </div>
+            <div class="col-6 text-start ">
+                <h2 class="text-light">
+             <img
+                    src="{% static 'images/time.svg' %}"
+                    height="75"
+                    alt=""
+                    loading="lazy"
+                    style="margin-top: -1px;"
+                  /> 12:00
+                    </h2>
+            </div>
+        </div>
+
+         <button type="submit" class=" text-center btn rounded btn-light mb-4 "><i class="fab fa-google mx-2"></i>Continuar com o Google</button>
+</div>
+    </div>
+
+</div>
+
+
+{% endblock %}

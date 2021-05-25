@@ -12,3 +12,40 @@
 .btn-light{
   background: #ffffff!important;
   color: #00EDBC!important;
+}
+
+.btn-saibamais{
+    color:#00C5DD;
+}
+
+.bg-gray{
+    background: #F5F5F5;
+}
+
+@media only screen and (max-width: 600px) {
+  .div-tamanho{
+    height: 100vh;
+}
+}
+
+.container-sign {
+max-width: 400px!important;
+width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-signup {
+max-width: 600px!important;
+width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+

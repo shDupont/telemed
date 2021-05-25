@@ -1,0 +1,56 @@
+
+{% extends 'med_app/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid gradient-custom p-5 mt-5" style="height: 100vh">
+
+<h1 class="text-center text-light  px-5 mt-5">Entrar em sua conta</h1>
+    <div class="container-sign text-right p-5 bg-light rounded my-5" >
+
+
+<form class="text-center">
+  <!-- 2 column grid layout with text inputs for the first and last names -->
+
+
+  <!-- Email input -->
+  <div class="form-outline mb-4">
+    <input type="email" id="form3Example3" class="form-control p-2" />
+    <label class="form-label" for="form3Example3">Email</label>
+  </div>
+
+  <!-- Password input -->
+  <div class="form-outline mb-4">
+    <input type="password" id="form3Example4" class="form-control p-2" />
+    <label class="form-label" for="form3Example4">Senha</label>
+
+  </div>
+    <div class="text-end">
+       <a class=""> Esqueceu a senha?</a>
+    </div>
+
+
+
+    <p class="text-center">Ou</p>
+
+    <div>
+            <button type="submit" class=" text-center btn btn-lg mb-4 "><i class="fab fa-google mx-2"></i>Continuar com o Google</button>
+    </div>
+
+
+
+
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-lg mb-4">Entrar</button>
+
+  <!-- Register buttons -->
+  <div class="text-center">
+
+  </div>
+</form>
+    </div>
+</div>
+
+
+
+{% endblock %}

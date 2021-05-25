@@ -13,3 +13,15 @@ def login(request):
 
 def aboutus(request):
     return render(request, 'med_app/aboutus.html')
+
+def signpaciente(request):
+    return render(request, 'med_app/signup-paciente.html')
+
+def signprofissional(request):
+    return render(request, 'med_app/signup-profissional.html')
+
+def signin(request):
+    return render(request, 'med_app/signin.html')
+
+def obrigado(request):
+    return render(request, 'med_app/obrigado.html')

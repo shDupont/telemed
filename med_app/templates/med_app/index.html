@@ -1,31 +1,80 @@
 {% extends 'med_app/main.html' %}
 {% load static %}
 {% block content %}
-<div class="container-fluid gradient-custom py-5" style="height: 100vh  ">
-    <div class="container mt-5" >
-        <div class="row">
-            <div class="col-sm my-auto">
+<div class="mt-5">
+        <div class="container-fluid div-tamanho gradient-custom py-5">
+            <div class="container mt-5" >
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6 my-auto">
 
-                <h3 class="text-light">Cuidar da sua saúde nunca foi tão fácil</h3>
-                <h6 class="text-light">Com a Conncare você faz suas consultas com diversos profissionais da saúde de forma rápida e segura no conforto de sua casa.</h6>
-                <button type="button" class="btn btn-rounded btn-light me-3">
-                    <p class="m-0 p-0">Entrar</p>
-                </button>
-            </div>
+                        <h1 class="text-light">Cuidar da sua saúde nunca foi tão fácil</h1>
+                        <h3 class="text-light">Com a Conncare você faz suas consultas com diversos profissionais da saúde de forma rápida e segura no conforto de sua casa.</h3>
+                        <button type="button" class="btn btn-rounded btn-light me-3">
+                            <p class="m-0 p-0 btn-saibamais">Saiba mais</p>
+                        </button>
+                    </div>
 
-            <div class=" col-sm" >
-                <img src="{% static 'images/banner.png' %}" height="550  ">
+                    <div class=" col-sm-12 col-lg-6" >
+                        <img src="{% static 'images/banner.png' %}" height="550  ">
+                    </div>
+                </div>
             </div>
         </div>
+
+
+    <div class="container-fluid div-tamanho " >
+    <img src="{% static 'images/ondas-cima.svg' %}" width="100%"  ">
+            <div class="container mt-5" >
+                <div class="row">
+
+
+                    <div class="col-sm-12 col-lg-6" >
+                        <img src="{% static 'images/banner-video.svg' %}" height="500  ">
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6 my-auto">
+
+                        <h1 class="text-dark text-bold mb-5">Cuidados<br>sem fronteiras</h1>
+                        <h3 class="text-dark">Não importa a plataforma que você está, pode ser computador, celular ou até mesmo tablet, a Conncare te permite fazer consultas onde quiser.</h3>
+
+                    </div>
+
+                </div>
+            </div>
+
     </div>
 
+    <div class="container-fluid m-0 p-0  div-tamanho ">
 
 
+
+            <div class="container-fluid  bg-gray mt-5" >
+                <img class="mb-5" src="{% static 'images/ondas-cima.svg' %}" width="100%">
+
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm-12 col-lg-6 my-auto">
+
+                        <h1 class="text-dark">Escolhas e opções <br>infinitas</h1>
+                        <h3 class="text-dark">A Conncare proporciona ferramentas suficientes para você poder escolher o profissional que melhor se encaixa com você.</h3>
+
+                    </div>
+
+                    <div class=" col-sm-12 col-lg-6" >
+                        <img src="{% static 'images/video-conference.svg' %}" height="550  ">
+                    </div>
+                </div>
+                </div>
+
+
+                <img src="{% static 'images/ondas-baixo.svg' %}" width="100%">
+            </div>
+
+
+
+        </div>
 
 </div>
-<div style="height: 100vh">
-    <div class="flex-center flex-column">
-      <h1 class="animated fadeIn mb-4">Home <i class="fa fa-heart red-text"></i></h1>
-    </div>
-</div>
+
+
 {% endblock %}
