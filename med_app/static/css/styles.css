@@ -9,6 +9,18 @@
   background: linear-gradient(to left, rgba(55, 236, 186, 1), rgba(114, 175, 211, 1));
 }
 
+.agendar-tamanho{
+    height: 50vh;
+}
+
+.branco{
+    background-color: #ffffff;
+}
+
+.meio-verde{
+    margin-top: -10vh!important;
+}
+
 @font-face {
     font-family: 'Jones-Medium';
     font-style: normal;

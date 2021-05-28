@@ -11,4 +11,6 @@ urlpatterns = [
     path('signin/', views.signin),
     path('login/', views.login),
     path('aboutus/', views.aboutus),
+    path('logado-agendar', views.logadoagendar),
+
 ]

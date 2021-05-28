@@ -28,3 +28,6 @@ def obrigado(request):
 
 def agendar(request):
     return render(request, 'med_app/agendar.html')
+
+def logadoagendar(request):
+    return render(request, 'med_app/logado-agendar.html')
