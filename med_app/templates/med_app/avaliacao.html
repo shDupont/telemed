@@ -1,0 +1,33 @@
+
+{% extends 'med_app/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid gradient-custom p-5 mt-5" style="height: 100vh">
+
+<h1 class="text-center text-light  px-5 mt-5">Como foi sua consulta com o Dr. Nome Sobrenome?</h1>
+    <h5 class="text-center text-light">Sua avaliação é muito importante para nós!</h5>
+    <div class="container-camera text-right p-5 bg-light rounded my-5" >
+        <div class="text-center">
+            <h6><img class="rounded " src="{% static 'images/star.svg' %}" alt="" height="20"><img class="rounded " src="{% static 'images/star.svg' %}" alt="" height="20"><img class="rounded " src="{% static 'images/star.svg' %}" alt="" height="20"><img class="rounded " src="{% static 'images/star.svg' %}" alt="" height="20"><img class="rounded " src="{% static 'images/star.svg' %}" alt="" height="20"></h6>
+        <h4 class="text-start">Comentários:</h4>
+            <div class="form-outline mb-4">
+                     <textarea class="form-control" id="form4Example3" rows="4" placeholder="Algum comentário sobre a consulta? Use este campo para isso! Pode ser alogios e/ou críticas, seja criativo!"></textarea>
+
+                    </div>
+            <div class="row text-center">
+                        <div class="col-6 my-auto">
+                            <button type="submit" class=" text-center btn px-5 rounded btn-red  ">Cancelar</button>
+                        </div>
+                        <div class="col-6 my-auto">
+                            <button type="submit" class=" text-center btn px-5 rounded btn-blue ">Enviar</button>
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+{% endblock %}
