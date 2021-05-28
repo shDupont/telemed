@@ -1,0 +1,26 @@
+{% extends 'med_app/main.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-5">
+        <div class="container-fluid tamanhoagendar gradient-custom py-5 my-5 m-0 ">
+            <div class="text-light my-5 text-center">
+                <h1>Bem vindo, User!</h1>
+                <p>Pronto pra agendar sua consulta?</p>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+    <div class="container text-center text-black-50 py-5">
+       <img src="{% static 'images/load.svg' %}"  alt="">
+        <h2 class="my-5">Parece que você não realizou nenhuma consulta ainda... <br> Realize uma e retorne aqui para visualizá-la!</h2>
+    </div>
+
+
+{% endblock %}

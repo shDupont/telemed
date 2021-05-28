@@ -12,5 +12,7 @@ urlpatterns = [
     path('login/', views.login),
     path('aboutus/', views.aboutus),
     path('logado-agendar', views.logadoagendar),
-
+    path('nav-logado', views.navlogado),
+    path('logado-consulta', views.logadoconsulta),
+    path('agendar-confirmar', views.agendarconfirmar),
 ]

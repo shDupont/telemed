@@ -31,3 +31,12 @@ def agendar(request):
 
 def logadoagendar(request):
     return render(request, 'med_app/logado-agendar.html')
+
+def navlogado(request):
+    return render(request, 'med_app/nav-logado.html')
+
+def logadoconsulta(request):
+    return render(request, 'med_app/logado-consulta.html')
+
+def agendarconfirmar(request):
+    return render(request, 'med_app/agendar-confirmar.html')

@@ -2,19 +2,21 @@
 {% load static %}
 {% block content %}
 <div class="mt-5">
-        <div class="container-fluid agendar-tamanho gradient-custom py-5 m-0 ">
-            <div class="text-light text-center">
+        <div class="container-fluid tamanhoagendar gradient-custom py-5 my-5 m-0 ">
+            <div class="text-light my-5 text-center">
                 <h1>Bem vindo, User!</h1>
                 <p>Pronto pra agendar sua consulta?</p>
+
             </div>
 
 
+
+
         </div>
-    <div class="content-center text-center">
-        <div class="container  meio-verde rounded bg-light py-5" >
+        <div class="container meio-verde text-center shadow text-black-50 border mx-auto rounded bg-light my-5 py-5" >
                 <div class="row">
-                    <div class="col-3 ">
-                        <select class="form-select  bg-light " aria-label="Default select example">
+                    <div class="col-3 px-4 text-end my-auto">
+                        <select class="form-select text-black-50 bg-light " aria-label="Default select example">
                               <option selected>Especialização</option>
                               <option value="1">One</option>
                               <option value="2">Two</option>
@@ -23,16 +25,16 @@
 
                     </div>
 
-                    <div class="col-3 " >
-                        <select class="form-select  bg-light " aria-label="Default select example">
+                    <div class="col-3 px-4 my-auto" >
+                        <select class="form-select text-black-50 bg-light " aria-label="Default select example">
                               <option selected>Especialização</option>
                               <option value="1">One</option>
                               <option value="2">Two</option>
                               <option value="3">Three</option>
                         </select>
                     </div>
-                    <div class="col-3 " >
-                        <select class="form-select  bg-light " aria-label="Default select example">
+                    <div class="col-3  px-4 my-auto" >
+                        <select class="form-select text-black-50 bg-light " aria-label="Default select example">
                               <option selected>Especialização</option>
                               <option value="1">One</option>
                               <option value="2">Two</option>
@@ -40,55 +42,88 @@
                         </select>
 
                     </div>
-                    <div class="col-3 " >
-                        <button type="button" class="btn btn-rounded btn-light me-3">
-                            <p class="m-0 p-0 btn-saibamais">Saiba mais</p>
+                    <div class="col-3 px-4 my-auto  " >
+                        <button type="button" class="btn btn-rounded btn-blue me-3">
+                            <p class="m-0 p-0 "><img src="{% static 'images/search.svg' %}" alt=""> Pesquisar</p>
                         </button>
                     </div>
                 </div>
             </div>
-    </div>
 
 
 
     <div class="container py-5">
         <div class="row">
-            <div class="col-6  bg-light p-5">
-                <div id="profissional" class="container py-5 branco rounded border">
+            <div class="col-lg-5 col-sm-12 my-4 shadow bg-light p-4 container   rounded border">
                     <div class="row">
-                        <div class="col-2">
-                            <img src="" alt="">
+                        <div class="col-3">
+                            <img class="rounded " src="{% static 'images/minha_foto.jpg' %}" alt="" height="100">
+
                         </div>
-                        <div class="col-5">
+                        <div class="col-8 ">
                             <h5>Nome e Sobrenome</h5>
-                            <h6>Especialização</h6>
-                            <h6>Nota</h6>
-                            <button type="button" class="btn  btn-rounded btn-light ">
-                                <p class="m-0 p-0 btn-saibamais ">Saiba mais</p>
+                            <h6 class="text-black-50">Especialização</h6>
+                            <h6><img class="rounded " src="{% static 'images/star.svg' %}" alt="" height="20"><img class="rounded " src="{% static 'images/star.svg' %}" alt="" height="20"><img class="rounded " src="{% static 'images/star.svg' %}" alt="" height="20"><img class="rounded " src="{% static 'images/star.svg' %}" alt="" height="20"><img class="rounded " src="{% static 'images/star.svg' %}" alt="" height="20"></h6>
+
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="text-end">
+                                <button type="button" class="btn btn-sm btn-rounded btn-blue ">
+                                <p class="my-auto  text-center ">Saiba mais</p>
                             </button>
+                            </div>
+                                </div>
+                                <div class="col-4 my-auto">
+                                     <div class="text-end">
+
+                                <a href=""> <img class="text-end" src="{% static 'images/coracao.svg' %}" alt=""></a>
+                            </div>
+                                </div>
+
+
+                            </div>
+
+
+
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-6 bg-light p-5">
-                <div id="" class="container">
+                    </div>
+            <div class="col-lg-5 col-sm-12 my-4 shadow bg-light p-4 container   rounded border">
                     <div class="row">
-                        <div class="col-2">
-                            <img src="" alt="">
+                        <div class="col-3">
+                            <img class="rounded " src="{% static 'images/minha_foto.jpg' %}" alt="" height="100">
+
                         </div>
-                        <div class="col-5">
+                        <div class="col-8 ">
                             <h5>Nome e Sobrenome</h5>
-                            <h6>Especialização</h6>
-                            <h6>Nota</h6>
-                            <button type="button" class="btn btn-rounded btn-light me-3">
-                                <p class="m-0 p-0 btn-saibamais ">Saiba mais</p>
+                            <h6 class="text-black-50">Especialização</h6>
+                            <h6><img class="rounded " src="{% static 'images/star.svg' %}" alt="" height="20"><img class="rounded " src="{% static 'images/star.svg' %}" alt="" height="20"><img class="rounded " src="{% static 'images/star.svg' %}" alt="" height="20"><img class="rounded " src="{% static 'images/star.svg' %}" alt="" height="20"><img class="rounded " src="{% static 'images/star.svg' %}" alt="" height="20"></h6>
+
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="text-end">
+                                <button type="button" class="btn btn-sm btn-rounded btn-blue ">
+                                <p class="my-auto  text-center ">Saiba mais</p>
                             </button>
+                            </div>
+                                </div>
+                                <div class="col-4 my-auto">
+                                     <div class="text-end">
+
+                                <a href=""> <img class="text-end" src="{% static 'images/coracao.svg' %}" alt=""></a>
+                            </div>
+                                </div>
+
+
+                            </div>
+
+
+
                         </div>
                     </div>
-            </div>
+                    </div>
         </div>
 
-    </div>
     </div>
 
 
