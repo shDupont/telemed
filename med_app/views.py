@@ -40,3 +40,21 @@ def logadoconsulta(request):
 
 def agendarconfirmar(request):
     return render(request, 'med_app/agendar-confirmar.html')
+
+def posagendamento(request):
+    return render(request, 'med_app/logado-com-consulta.html')
+
+def posconsulta(request):
+    return render(request, 'med_app/logado-com-historico.html')
+
+def prechamada(request):
+    return render(request, 'med_app/pre-chamada.html')
+
+def avaliacao(request):
+    return render(request, 'med_app/avaliacao.html')
+
+def chamada(request):
+    return render(request, 'med_app/chamada.html')
+
+def configpaciente(request):
+    return render(request, 'med_app/config-paciente.html')

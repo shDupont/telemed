@@ -1,0 +1,53 @@
+{% extends 'med_app/main.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-5">
+        <div class="container-fluid tamanhoagendar gradient-custom py-5 my-5 m-0 ">
+            <div class="text-light my-5 text-center">
+                <h1>Bem vindo, User!</h1>
+                <p>Pronto pra agendar sua consulta?</p>
+
+            </div>
+
+
+
+
+        </div>
+        <div class="container meio-verde text-center " >
+            <img class="rounded-circle" src="{% static 'images/minha_foto.jpg' %}" height="100" alt="">
+            </div>
+
+
+
+    <div class="container py-5">
+        <h1 class="text-center mb-5">Letícia Dupont Rodrigues Gonçalves</h1>
+        <div class="row">
+            <div class="col-6">
+                <div class="form-outline mb-4">
+                <input type="email" id="form3Example3" class="form-control p-2" />
+                <label class="form-label" for="form3Example3">Email</label>
+            </div>
+            </div>
+            <div class="col-6">
+                <div class="form-outline mb-4">
+    <input type="password" id="form3Example4" class="form-control p-2" />
+    <label class="form-label" for="form3Example4">Senha</label>
+
+  </div>
+            </div>
+
+
+
+
+        </div>
+        <div class=" text-center">
+
+                        <div class="col-12 my-auto">
+                            <button type="submit" class=" text-center btn px-5 rounded btn-green ">Salvar</button>
+                        </div>
+                    </div>
+
+    </div>
+</div>
+
+{% endblock %}

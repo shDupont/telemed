@@ -15,4 +15,10 @@ urlpatterns = [
     path('nav-logado', views.navlogado),
     path('logado-consulta', views.logadoconsulta),
     path('agendar-confirmar', views.agendarconfirmar),
+    path('pos-agendamento', views.posagendamento),
+    path('pos-consulta', views.posconsulta),
+    path('pre-chamada', views.prechamada),
+    path('avaliacao', views.avaliacao),
+    path('chamada', views.chamada),
+    path('config-paciente', views.configpaciente),
 ]
