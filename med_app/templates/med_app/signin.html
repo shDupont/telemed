@@ -2,6 +2,7 @@
 {% extends 'med_app/main.html' %}
 {% load static %}
 {% block content %}
+{% load socialaccount %}
 
 <div class="container-fluid gradient-custom p-5 mt-5" style="height: 100vh">
 
@@ -34,7 +35,7 @@
     <p class="text-center">Ou</p>
 
     <div>
-            <button type="submit" class=" text-center btn btn-lg mb-4 "><i class="fab fa-google mx-2"></i>Continuar com o Google</button>
+            <a type="submit" class=" text-center btn btn-lg mb-4 " href="{% provider_login_url 'google' %}" ><i class="fab fa-google mx-2"></i>Continuar com o Google</a>
     </div>
 
 
