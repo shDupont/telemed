@@ -36,9 +36,24 @@
       <!-- Left links -->
 
       <div class="d-flex align-items-center">
-        <button type="button" class="btn btn-link text-light px-3 me-2">
-          <p class="text-light m-0 p-0">Cadastrar </p>
-        </button>
+        <div class="dropdown">
+          <a
+            class=" dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropdown link
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="{% url 'signpaciente' %}">Paciente</a></li>
+            <li><a class="dropdown-item" href="{% url 'signprofissional' %}">Profissional</a></li>
+
+          </ul>
+        </div>
         <button type="button" class="btn btn-rounded btn-light me-3">
           <p class="text-button m-0 p-0">Entrar</p>
         </button>
