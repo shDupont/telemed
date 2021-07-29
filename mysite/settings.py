@@ -166,4 +166,6 @@ SITE_ID = 3
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
+ACCOUNT_LOGOUT_ON_GET = True
+
 django_heroku.settings(locals())
