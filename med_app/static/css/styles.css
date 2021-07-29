@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Jones-Medium';
+  src: local('Jones-Medium'),
+  url('../static/fonts/Jones-Medium.otf') format("truetype");
+}
 .gradient-custom {
   /* fallback for old browsers */
   background: #37ecba;

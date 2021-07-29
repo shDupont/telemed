@@ -1,0 +1,54 @@
+{% load static %}
+{% load socialaccount %}
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar gradient-custom fixed-top text-light">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2">
+      <img
+        src="{% static 'images/logo.svg' %}"
+        height="50"
+        alt=""
+        loading="lazy"
+        style="margin-top: -1px;"
+      />
+    </a>
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarButtonsExample"
+      aria-controls="navbarButtonsExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <!-- Left links -->
+      <ul class="navbar-nav m-auto ">
+          <a class="link-white m-auto mx-3" href="{% url 'agendar' %}"> Agendar </a>
+          <a class="link-white m-auto mx-3" href="{% url 'consultas' %}"> Consultas </a>
+          <a class="link-white m-auto mx-3" href="{% url 'historico' %}"> Histórico </a>
+      </ul>
+      <!-- Left links -->
+
+      <div class="d-flex align-items-center">
+
+          <button type="button" class="btn btn-rounded btn-light me-3">
+            <a class="text-button text-success m-0 p-0" href="{% url 'account_logout' %}"> Sair </a>
+          </button>
+
+      </div>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
