@@ -14,8 +14,28 @@ def login(request):
 def aboutus(request):
     return render(request, 'med_app/aboutus.html')
 
-def signpaciente(request):
-    return render(request, 'med_app/signup-paciente.html')
+
+from django.contrib.auth import login, authenticate
+# from django.contrib.auth.forms import UserCreationForm
+from allauth.account.forms import SignupForm
+from django.shortcuts import render, redirect
+
+
+def signup_paciente(request):
+    # return render(request, 'med_app/signup-paciente.html')
+
+    if request.method == 'POST':
+        form = SignupForm(request.POST)
+        if form.is_valid():
+            form.save(request)
+            username = form.cleaned_data.get('email')
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=raw_password)
+            ##login(request, user)
+            # return redirect('home')
+    else:
+        form = SignupForm()
+    return render(request, 'med_app/signup-paciente.html', {'form': form})
 
 def signprofissional(request):
     return render(request, 'med_app/signup-profissional.html')
