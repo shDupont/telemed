@@ -1,0 +1,69 @@
+{% load static %}
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar gradient-custom fixed-top text-light">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2" href="https://mdbgo.com/">
+      <img
+        src="{% static 'images/logo.svg' %}"
+        height="50"
+        alt=""
+        loading="lazy"
+        style="margin-top: -1px;"
+      />
+    </a>
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarButtonsExample"
+      aria-controls="navbarButtonsExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <a class="dropdown-item" href="{% url 'agendar' %}"> Agendar </a>
+          <a class="dropdown-item" href="{% url 'consultas' %}"> Consultas </a>
+          <a class="dropdown-item" href="{% url 'historico' %}"> Histórico </a>
+      </ul>
+      <!-- Left links -->
+
+      <div class="d-flex align-items-center">
+        <div class="dropdown ">
+          <a
+            class=" link-light dropdown-toggle mx-2"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Cadastro
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="{% url 'signpaciente' %}">Paciente </a></li>
+            <li><a class="dropdown-item" href="{% url 'signprofissional' %}">Profissional </a></li>
+
+          </ul>
+        </div>
+        <button type="button" class="btn btn-rounded btn-light me-3">
+          <a class="text-button m-0 p-0" href="{% url 'signin' %}">Entrar</a>
+        </button>
+
+      </div>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
